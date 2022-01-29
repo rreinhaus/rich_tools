@@ -29,5 +29,4 @@ joblib
 memoized-property
 termcolor
 
-# classmates
-git+ssh://git@github.com/tomerenshtein/the_greatest_project
+

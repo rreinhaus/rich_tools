@@ -22,7 +22,7 @@ on:
 
 jobs:
 
-  # 🤖 CI paragraph
+  # 🤖 CI paragraphs
   #
   # uncomment the content of this paragraph to activate the tests in GitHub CI
   # - remove the 2 trailing characters "# ", do not change the spaces

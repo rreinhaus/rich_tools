@@ -22,7 +22,7 @@ on:
 
 jobs:
 
-  # 🤖 CI paragraphs
+  # 🤖 CI paragraph
   #
   # uncomment the content of this paragraph to activate the tests in GitHub CI
   # - remove the 2 trailing characters "# ", do not change the spaces
@@ -62,14 +62,14 @@ jobs:
   # # - keep in mind you also need to configure Heroku HEROKU_API_KEY and HEROKU_EMAIL in GitHub secrets
   # # - and replace REPLACE_WITH_YOUR_HEROKU_APP_NAME in this file with the name of your Heroku app
 
-   deploy_heroku:
-     needs: build
-     runs-on: ubuntu-latest
+  deploy_heroku:
+    needs: build
+    runs-on: ubuntu-latest
 
-     steps:
-     - uses: actions/checkout@v2
-     - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
-       with:
-         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-         heroku_app_name: "richreintools" # Must be unique in Heroku
-         heroku_email: ${{secrets.HEROKU_EMAIL}}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "richreintools" # Must be unique in Heroku
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
